@@ -6,7 +6,7 @@ $senha = "";
 $database = "u491401037_pds";
 $conexao = mysqli_connect($servidor, $usuario, $senha, $database);
 
-$query = sprintf('select * from programacao where prg_datapromessa > \'2020-01-01\' order by prg_datapromessa desc, prg_contrato');
+$query = sprintf('select * from pds_programacao where prg_datapromessa > \'2020-01-01\' order by prg_datapromessa desc, prg_contrato');
 
 $consulta = mysqli_query($conexao, $query);
 

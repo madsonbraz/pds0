@@ -2,7 +2,7 @@
 include_once("config.php");
 
 // include and create object
-include("lib/inc/jqgrid_dist.php");
+include(PHPGRID_LIBPATH."inc/jqgrid_dist.php");
 
 $db_conf = array(
     "type"      => PHPGRID_DBTYPE,
@@ -24,3 +24,6 @@ $out = $g->render("list1");
 
 echo $out;
 ?>
+<div>
+	<?php echo $out?>
+	</div>

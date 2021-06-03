@@ -24,7 +24,7 @@ $g = new jqgrid($db_conf);
 
 $grid["caption"] = "Sample Grid";
 $g->set_options($grid);
-$g->table = "prg_programacao";
+$g->table = "pds_programacao";
 
 $out = $g->render("list1");
 ?>
